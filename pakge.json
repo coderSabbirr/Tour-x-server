@@ -1,0 +1,46 @@
+[
+    {
+     "name":"Paris Hill Tour",
+     "day":"5 Dyas/6 night",
+     "cost":"180",
+     "rating":"8",
+     "img":"https://i.ibb.co/jhLPL3Y/p-1-43d43fdd.png"
+    },
+    {
+     "name":"Lake Garda, Italy",
+     "day":"5 Dyas/6 night",
+     "cost":"280",
+     "rating":"8",
+     "img":"https://i.ibb.co/CQFzyfh/p-2-02c7fd31.png"
+    },
+    {
+     "name":"Mount Dtna, Italyr",
+     "day":"5 Dyas/6 night",
+     "cost":"120",
+     "rating":"8",
+     "img":"https://i.ibb.co/TY3r6QL/p-3-460015b6.png"
+    },
+
+    
+    {
+     "name":"Amalfi Costa, Italy",
+     "day":"5 Dyas/6 night",
+     "cost":"300",
+     "rating":"8",
+     "img":"https://i.ibb.co/b674Dwn/p-4-5a3083bb.png"
+    },
+    {
+     "name":"French Rivira, France",
+     "day":"5 Dyas/6 night",
+     "cost":"240",
+     "rating":"8",
+     "img":"https://i.ibb.co/HCXcZpv/p-5-194db7b2.png"
+    },
+    {
+     "name":"Lake Geneva, France",
+     "day":"5 Dyas/6 night",
+     "cost":"145",
+     "rating":"8",
+     "img":"https://i.ibb.co/Bn8bKKT/p-6-1c3145eb.png"
+    }
+]
