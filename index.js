@@ -40,6 +40,7 @@ async function run() {
             const package = await packageCollection.findOne(query);
             res.json(package);
         })
+       
 
         app.get("/orders/:email", async (req, res) => {
             const result = await orderCollection.find({
@@ -64,18 +65,20 @@ async function run() {
             res.send(result);
           });
 
-        //   app.put('/ordersupdate/:id', async (req, res) => {
-        //     const result = await orderCollection.updateOne({_id: req.params.id},{
-        //         $set:{
-        //             status:'active'
-        //         }
-        //     },(error)=>{
-        //         console.log(error)
-        //     })
-           
-            
-        // })
-
+          app.put('/ordersupdate/:id', async (req, res) =>{
+              const id=req.params.id;
+              const filter={_id:ObjectId(id)}
+              const updateStatus=req.body;
+              const options={upsert:true}
+              const updateDoc ={
+                  $set:{
+                    status:updateStatus
+                  }
+              };
+              const result = await orderCollection.updateOne(filter,updateDoc,options);
+              res.json(result);
+              
+          })
 
         app.delete('/orders/:id', async (req, res) => {
             const query = { _id: ObjectId(req.params.id) }
