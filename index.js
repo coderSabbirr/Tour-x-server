@@ -64,6 +64,19 @@ async function run() {
             res.send(result);
           });
 
+        //   app.put('/ordersupdate/:id', async (req, res) => {
+        //     const result = await orderCollection.updateOne({_id: req.params.id},{
+        //         $set:{
+        //             status:'active'
+        //         }
+        //     },(error)=>{
+        //         console.log(error)
+        //     })
+           
+            
+        // })
+
+
         app.delete('/orders/:id', async (req, res) => {
             const query = { _id: ObjectId(req.params.id) }
             const result = await orderCollection.deleteOne(query)
